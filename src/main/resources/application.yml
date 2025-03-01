@@ -1,0 +1,33 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: Demo4Application
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123
+  flyway:
+    baseline-on-migrate: false
+    defaultSchema: public
+    enabled: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      generate-ddl: false
+      show-sql: false
+    open-in-view: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+logging:
+  charset:
+    console: UTF-8
+  level:
+    root: INFO
+    org:
+      jooq: DEBUG

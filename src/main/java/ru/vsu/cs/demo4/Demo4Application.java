@@ -1,13 +1,13 @@
-package ru.comm.musicappbackend;
+package ru.vsu.cs.demo4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MusicAppBackendApplication {
+public class Demo4Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(MusicAppBackendApplication.class, args);
+        SpringApplication.run(Demo4Application.class, args);
     }
 
 }
