@@ -10,9 +10,9 @@ spring:
     username: postgres
     password: 123
   flyway:
-    baseline-on-migrate: false
     defaultSchema: public
-    enabled: false
+    baselineOnMigrate: true
+    enabled: true
   jpa:
     properties:
       hibernate:

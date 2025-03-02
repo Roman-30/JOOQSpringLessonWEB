@@ -1,11 +1,11 @@
 COMMENT ON TABLE lecturer IS 'Table to store information about lecturers';
- ON COLUMN lecturer.id IS 'Unique identifier for the lecturer';
- ON COLUMN lecturer.name IS 'First name of the lecturer';
- ON COLUMN lecturer.surname IS 'Last name of the lecturer';
- ON COLUMN lecturer.email IS 'Email address of the lecturer';
- ON COLUMN lecturer.phone IS 'Phone number of the lecturer';
- ON COLUMN lecturer.start_work IS 'Date and time when the lecturer started working';
- ON COLUMN lecturer.start_profession IS 'Date and time when the lecturer started their profession';
+COMMENT ON COLUMN lecturer.id IS 'Unique identifier for the lecturer';
+COMMENT ON COLUMN lecturer.name IS 'First name of the lecturer';
+COMMENT ON COLUMN lecturer.surname IS 'Last name of the lecturer';
+COMMENT ON COLUMN lecturer.email IS 'Email address of the lecturer';
+COMMENT ON COLUMN lecturer.phone IS 'Phone number of the lecturer';
+COMMENT ON COLUMN lecturer.start_work IS 'Date and time when the lecturer started working';
+COMMENT ON COLUMN lecturer.start_profession IS 'Date and time when the lecturer started their profession';
 
 COMMENT ON TABLE subject IS 'Table to store information about subjects';
 COMMENT ON COLUMN subject.id IS 'Unique identifier for the subject';
