@@ -1,6 +1,6 @@
 CREATE SEQUENCE lecturer_id_seq;
 
-CREATE TABLE Lecturer
+CREATE TABLE lecturer
 (
     id      BIGINT PRIMARY KEY DEFAULT nextval('lecturer_id_seq'),
     name    VARCHAR(255) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE Lecturer
 
 CREATE SEQUENCE subject_id_seq;
 
-CREATE TABLE Subject
+CREATE TABLE subject
 (
     id         BIGINT PRIMARY KEY DEFAULT nextval('subject_id_seq'),
     name       VARCHAR(255) NOT NULL,
@@ -21,13 +21,13 @@ CREATE TABLE Subject
 
 CREATE SEQUENCE timetable_id_seq;
 
-CREATE TABLE Timetable
+CREATE TABLE timetable
 (
     id          BIGINT PRIMARY KEY DEFAULT nextval('timetable_id_seq'),
     room_number INT NOT NULL,
     pare_number INT NOT NULL,
     lecture_id  BIGINT,
     subject_id  BIGINT
---     FOREIGN KEY (lectureId) REFERENCES Lecturer (id),
---     FOREIGN KEY (subjectId) REFERENCES Subject (id)
+--     FOREIGN KEY (lecture_id) REFERENCES lecturer (id),
+--     FOREIGN KEY (subject_id) REFERENCES subject (id)
 );
