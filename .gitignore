@@ -9,6 +9,8 @@ target/
 /.idea/
 /pom.xml
 
+/src/main/java/jooq**
+
 ### STS ###
 .apt_generated
 .classpath
